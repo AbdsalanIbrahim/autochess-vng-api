@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Set text color to white for visibility */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding for better layout */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .settings {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .settings label {
+    margin-right: 10px; /* Space between label and dropdown */
+  }
+  
+  #color {
+    margin-right: 10px; /* Space between dropdown and button */
+  }
+  
+  #chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    border: 5px solid white; /* Change border to white for visibility */
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+  .white {
+    background-color: #f0d9b5; /* Light color for white squares */
+  }
+  
+  .black {
+    background-color: #b58863; /* Darker color for black squares */
+  }
+  
+  .piece {
+    cursor: pointer;
+    color: black; /* Default piece color */
+  }
+  
+  .piece:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Additional styles for dark mode piece colors */
+  .white .piece {
+    color: black; /* White pieces should be black for visibility */
+  }
+  
+  .black .piece {
+    color: white; /* Black pieces should be white for visibility */
+  }
+  
